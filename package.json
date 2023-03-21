@@ -1,6 +1,6 @@
 {
   "name": "hrnet-modal-micka-dev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": false,
   "module": "./dist/modal.js",
   "dependencies": {

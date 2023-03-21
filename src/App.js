@@ -25,7 +25,7 @@ function App() {
         <button onClick={() => setfirst(true)}>open / close</button>
       </header>
 
-      <Modal style={{ borderRadius: 20}} onBackDropPress={() => { setfirst(() => !first) }} isVisible={first}>
+      <Modal style={{ borderRadius: 20 }} isVisible={first}>
         <div className='close-btn' onClick={() => setfirst(!first)}>x</div>
         <p className='modal-msg'>Employee Created !</p>
       </Modal>

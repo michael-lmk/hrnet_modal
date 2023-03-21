@@ -14,7 +14,7 @@ npm i hrnet-modal-micka-dev
 | ---------- | ---------------------------------- | ------------ |
 | Children   | Content inside component           | JSX Elements |
 | isVisible  | Props for display modal type: bool | Bool         |
-| isVisible  | Props for styling content modal    | js style     |
+| style      | Props for styling content modal    | js style     |
 
 # Example
 
@@ -27,11 +27,10 @@ export const modal = () => {
 
   return (
     <div>
-      <Modal
-        style={{ borderRadius: 20 }}
-        isVisible={isVisible}
-      >
-        <p className="modal-msg">Lorem Ipsum is simply dummy text of the printing </p>
+      <Modal style={{ borderRadius: 20 }} isVisible={isVisible}>
+        <p className="modal-msg">
+          Lorem Ipsum is simply dummy text of the printing{" "}
+        </p>
       </Modal>
       <button onClick={setIsVisible(() => !isVisible)} />
     </div>
